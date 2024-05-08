@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="aulogo.png" alt="School Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="program_course.html">Programs & Courses</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Arellano University</h1>
+        <h2>Jose Abad Santos</h2>
+        <p>"Empowering minds, shaping futures. At Arellano University, we believe in providing quality education that transforms lives and enriches communities."</p>
+    </div>
+    <div class="campuses">
+        <div class="campus-box">
+            <h3>Juan Sumulong Campus</h3>
+            <p>2600 Legarda St., Sampaloc, Manila, 1008 Metro Manila<br>8-734-7371 to 79</p>
+        </div>
+        <div class="campus-box">
+            <h3>Andres Bonifacio Campus</h3>
+            <p>Pag-asa St., Brgy. Caniogan, Pasig City<br>8-404-1644 | 8-641-4203 | 8-579-7295 | 8-579-7296</p>
+        </div>
+        <div class="campus-box">
+            <h3>Apolinario Mabini Campus</h3>
+            <p>Taft Avenue corner Menlo St., Pasay City<br>8-524-2850</p>
+        </div>
+        <div class="campus-box">
+            <h3>Jose Rizal Campus</h3>
+            <p>Gov. Pascual Avenue, Malabon City<br>8-921-2744 | 8-281-0025 | 8-579-7289 | 8-921-0386</p>
+        </div>
+        <div class="campus-box">
+            <h3>Plaridel Campus</h3>
+            <p>53 Gen. Kalentong St., Mandaluyong City<br>8-532-7741 | 8-531-4388</p>
+        </div>
+        <div class="campus-box">
+            <h3>Elisa Esguerra Campus</h3>
+            <p>Gen. Luna corner Esguerra St., Bayan-Bayanan, Malabon City<br>8-932-5209</p>
+        </div>
+    </div>
+
+    <video controls id="videoBG">
+        <source src="auvid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="CAS.jpg" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="au-bg.jpg" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="au-jas-img-4.jpg" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="aupic.jpg" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="aupic1.jpg" alt="Slide 2"></div>
+           
+        </div>
+        
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <footer>
+        <ul class="social-links">
+            <li><a href="https://web.facebook.com/ArellanoUniversityOfficial"><img src="fblogo.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com/arellano_u"><img src="twitlogo.png" alt="twitter"></a></li>
+            <li><a href="https://www.youtube.com/@ArellanoUniversityOfficial"><img src="ytlogo.png" alt="YouTube"></a></li>
+        </ul>
+        <p>&copy; 2024 Arellano University. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000, 
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

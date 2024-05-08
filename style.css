@@ -1,0 +1,156 @@
+ 
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ 
+body {
+    font-family: Arial, sans-serif;
+    position: relative;  
+    min-height: 100vh; 
+    margin: 0; 
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.5)), url('au-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+ 
+header {
+    background-image: url('au-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Content styles */
+.content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content h1 {
+    font-size: 36px;
+    color: blue;
+}
+
+.content h2 {
+    font-size: 30px;
+    color: blue;
+}
+
+.content p {
+    font-size: 18px;
+    color: crimson;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Campuses styles */
+.campuses {
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.campus-box {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1;
+    color: darkslateblue;
+}
+
+.campus-box h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.campus-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Video container */
+#videoBG {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    max-width: 800px; 
+}
+
+
+.swiper-container {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
